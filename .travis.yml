@@ -13,6 +13,6 @@ before_install:
  - npm install mocha
  - npm install chai
 install:
- - java -jar caMicroscopeTestSuite/selenium-server-standalone-3.0.0.jar
+ - java -jar 'email:heyuan0755@gmail.com:caMicroscopeTestSuite/selenium-server-standalone-3.0.0.jar'
  - ./chromedriver
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
