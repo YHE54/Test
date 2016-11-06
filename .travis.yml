@@ -13,7 +13,7 @@ before_install:
  - npm install mocha
  - npm install chai
 install:
- - ~/.ssh/YHE54
- - java -jar 'caMicroscopeTestSuite/selenium-server-standalone-3.0.0.jar'
+ - wget https://github.com/YHE54/TestHelloWorld/caMicroscopeTestSuite/selenium-server-standalone-3.0.0.jar
+ - java -jar 'selenium-server-standalone-3.0.0.jar'
  - ./chromedriver
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
