@@ -1,6 +1,5 @@
 language: node_js
 java: 
- - "7"
 node_js:
  - "6"
  - "6.1"
