@@ -6,6 +6,7 @@ node_js:
  - "0.6"
  - "iojs"
  - "node"
+language: java
 before_install:
  - npm install selenium-webdriver
  - npm install
