@@ -1,4 +1,4 @@
-language: node_js 
+language: node_js,java
 node_js:
  - "6"
  - "6.1"
@@ -12,7 +12,6 @@ before_install:
  - npm install chromedriver
  - npm install mocha
  - npm install chai
-language: java
 install:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar 'selenium-server-standalone-3.0.0-beta4.jar'
