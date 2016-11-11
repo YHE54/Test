@@ -1,6 +1,5 @@
 language: node_js java
-java: 
- - "JDK8"
+
 node_js:
  - "6"
  - "6.1"
@@ -8,6 +7,8 @@ node_js:
  - "0.6"
  - "iojs"
  - "node"
+java: 
+ - "JDK8"
 before_install:
  - npm install selenium-webdriver
  - npm install
