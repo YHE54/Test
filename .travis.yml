@@ -7,8 +7,10 @@ node_js:
  - "0.6"
  - "iojs"
  - "node"
-java: 
- - "JDK8"
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk6
 before_install:
  - npm install selenium-webdriver
  - npm install
