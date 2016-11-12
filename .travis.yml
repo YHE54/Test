@@ -13,6 +13,7 @@ jdk:
   - openjdk6
 before_install:
  - npm install selenium-webdriver
+ - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscope'
  - npm install
  - npm install chromedriver
  - npm install mocha
