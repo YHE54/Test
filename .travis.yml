@@ -9,6 +9,7 @@ node_js:
  - "node"
 jdk:
   - oraclejdk8
+  
 before_install:
  - npm install selenium-webdriver
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
@@ -16,9 +17,11 @@ before_install:
  - npm install chromedriver
  - npm install mocha
  - npm install chai
+ 
 install:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar 'selenium-server-standalone-3.0.0-beta4.jar'
+ 
 execute:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/chromedriver"
  - ./chromedriver
