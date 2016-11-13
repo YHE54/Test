@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
 
 before_install:
- - nvm use node 
+ - nvm install node 
  - npm install selenium-webdriver
  - npm install chromedriver
  - npm install mocha
