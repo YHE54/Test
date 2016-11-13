@@ -2,7 +2,6 @@ language: java
 jdk:
   - oraclejdk8
 nvm:
- - "6.9"
  - "node"
 before_install:
  - npm install selenium-webdriver
