@@ -2,6 +2,7 @@ language: java node_js
 
 node_js:
  - "6.9"
+ - "node"
 
   
 before_install:
