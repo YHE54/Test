@@ -3,9 +3,9 @@ node_js:
  - "6.9"
  - "node"
 addons:
-  apt:
-    packages:
-      - oracle-java8-installer
+ jdk:
+  - oraclejdk8
+
 before_install:
  - npm install selenium-webdriver
  - npm install chromedriver
