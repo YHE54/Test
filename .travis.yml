@@ -1,10 +1,9 @@
-language: java node_js 
+language: node_js 
 
 node_js:
  - "6.9"
  - "node"
 
-  
 before_install:
  - npm install selenium-webdriver
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
