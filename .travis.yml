@@ -2,6 +2,8 @@ language: node_js
 node_js:
  - "6.9"
  - "node" 
+jdk:
+ - oraclejdk8
 before_install:
  - npm install selenium-webdriver
  - npm install chromedriver
@@ -13,7 +15,7 @@ before_install:
 
 
 env:
- - oraclejdk8
+
  
 script:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
