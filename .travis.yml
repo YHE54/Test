@@ -1,10 +1,7 @@
 language: node_js 
 node_js:
  - "6.9"
- - "node"
-language: java
- - oraclejdk8
- 
+ - "node" 
 before_install:
  - npm install selenium-webdriver
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
@@ -12,7 +9,8 @@ before_install:
  - npm install chromedriver
  - npm install mocha
  - npm install chai
- 
+jdk:
+ - oraclejdk8
 env:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar 'selenium-server-standalone-3.0.0-beta4.jar'
