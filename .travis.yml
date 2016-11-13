@@ -11,10 +11,10 @@ before_install:
  - npm install
 
 
+
+env:
 jdk:
  - oraclejdk8
-env:
-
  
 script:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
