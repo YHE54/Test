@@ -1,7 +1,8 @@
 language: node_js 
 node_js:
  - "6.9"
- - "node" 
+ - "node"
+language: java
 jdk:
  - oraclejdk8
 before_install:
