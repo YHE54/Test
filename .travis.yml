@@ -1,6 +1,6 @@
 language: node.js
 node:
- - "5.6"
+ - "0.10.36"
 before_install:
  - npm install selenium-webdriver
  - npm install chromedriver
