@@ -8,8 +8,6 @@ before_install:
  - npm install chai
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
  - npm install
- 
-language: java 
 jdk:
   - oraclejdk8
 script:
