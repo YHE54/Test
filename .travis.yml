@@ -1,6 +1,9 @@
 language: java
 jdk:
   - oraclejdk8
+sudo: required
+services:
+  - docker
 before_install:
  - nvm install 0.12
  - nvm use 0.12
