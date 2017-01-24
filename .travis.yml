@@ -8,7 +8,6 @@ before_install:
  - nvm install 0.12
  - nvm use 0.12
  - npm install selenium-webdriver
- - npm install geckodriver
  - npm install mocha
  - npm install chai
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
@@ -17,6 +16,6 @@ before_install:
 script:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar 'selenium-server-standalone-3.0.0-beta4.jar' &
- - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/chromedriver"
+ - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/geckodriver"
  - ./geckodriver &
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
