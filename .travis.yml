@@ -10,7 +10,6 @@ before_install:
  - npm install selenium-webdriver
  - npm install mocha
  - npm install chai
- - npm install geckodriver
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
  - npm install
 
