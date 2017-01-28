@@ -1,7 +1,6 @@
 language: java
 jdk:
   - oraclejdk8
-sudo: required
 services:
   - docker
 before_install:
@@ -17,7 +16,7 @@ before_install:
 script:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/install.sh"
  - ./install.sh
- - wget "http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1.svs"
+ - wget "http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs"
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/test1.sh"
  - ./test1.sh
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
