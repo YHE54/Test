@@ -45,7 +45,6 @@ exports.config = {
         maxInstances: 5,
         //browserName=chrome,maxInstances=5,platform=LINUX
         browserName: 'chrome' 
-        platform:'LINUX'
     }],
     //
     // ===================
