@@ -24,4 +24,6 @@ script:
  - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/chromedriver"
  - ./chromedriver&
+ - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/firefoxdriver.sh"
+ - chmod a+x firefoxdriver.sh
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
