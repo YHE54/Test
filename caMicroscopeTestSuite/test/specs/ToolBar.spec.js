@@ -4,6 +4,9 @@ var assert = require('chai').assert;
 var webdriverio = require('webdriverio');
 //var options = { desiredCapabilities : { browserName: 'chrome' } };
 //var client = webdriverio.remote(options);
+var webdriver = require('selenium-webdriver'),
+    By = webdriver.By,
+    until = webdriver.until;
 var driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
