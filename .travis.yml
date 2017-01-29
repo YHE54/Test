@@ -9,6 +9,7 @@ before_install:
  - npm install chromedriver
  - npm install mocha
  - npm install chai
+ - npm install webdriverio
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
  - npm install
 
