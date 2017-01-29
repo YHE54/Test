@@ -2,14 +2,8 @@
 var ToolBar = require("../pageobjects/ToolBar.js");
 var assert = require('chai').assert;
 var webdriverio = require('webdriverio');
-//var options = { desiredCapabilities : { browserName: 'chrome' } };
-//var client = webdriverio.remote(options);
-var webdriver = require('selenium-webdriver'),
-    By = webdriver.By,
-    until = webdriver.until;
-var driver = new webdriver.Builder()
-    .forBrowser('chrome')
-    .build();
+var options = { desiredCapabilities : { browserName: 'chrome' } };
+var client = webdriverio.remote(options);
 
 describe('ToolBar', function() {
     //these actions assert that certain elements of the page exist
