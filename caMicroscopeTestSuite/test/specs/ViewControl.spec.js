@@ -2,13 +2,15 @@
 var ToolBar = require("../pageobjects/ToolBar.js");
 var assert = require('chai').assert;
 var webdriverio = require('webdriverio');
-var webdriver = require('selenium-webdriver'),
-    chrome = require('selenium-webdriver/chrome')
-    By = webdriver.By,
-    until = webdriver.until;
-var driver = new webdriver.Builder()
-    .forBrowser(chrome)
-    .build();
+//var webdriver = require('selenium-webdriver'),
+//    chrome = require('selenium-webdriver/chrome')
+//    By = webdriver.By,
+//    until = webdriver.until;
+//var driver = new webdriver.Builder()
+//    .forBrowser(chrome)
+//   .build();
+var options = { desiredCapabilities : { browserName: 'chrome' } };
+var client = webdriverio.remote(options);
 
 describe('Viewing options', function() {
     describe('Zoom option', function() {
