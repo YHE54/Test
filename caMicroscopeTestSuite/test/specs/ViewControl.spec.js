@@ -3,6 +3,7 @@ var ToolBar = require("../pageobjects/ToolBar.js");
 var assert = require('chai').assert;
 var webdriverio = require('webdriverio');
 var webdriver = require('selenium-webdriver'),
+    chrome = require('selenium-webdriver/chrome')
     By = webdriver.By,
     until = webdriver.until;
 var driver = new webdriver.Builder()
