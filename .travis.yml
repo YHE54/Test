@@ -13,6 +13,7 @@ before_install:
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
  - npm install
 
+
 script:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/install.sh"
  - chmod a+x install.sh
