@@ -6,7 +6,7 @@ services:
 before_install:
  - npm install --save selenium-webdriver@2.44.0 
  - npm install selenium-webdriver
- - npm install chromedriver
+ - npm install geckodriver
  - npm install mocha
  - npm install chai
  - npm install webdriverio
@@ -23,7 +23,7 @@ script:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/chromedriver"
- - ./chromedriver&
+ - ./geckodriver&
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/firefoxdriver.sh"
  - chmod a+x firefoxdriver.sh
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
