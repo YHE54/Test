@@ -11,12 +11,7 @@ before_install:
  - npm install mocha
  - npm install chai
  - npm install webdriverio
- 
- - wget https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckodriver-v0.11.1-linux64.tar.gz
- - mkdir geckodriver
- - tar -xzf geckodriver-v0.11.1-linux64.tar.gz -C geckodriver
- - export PATH=$PATH:$PWD/geckodriver
-
+ - npm chromedriver
  - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
  - npm install
 
@@ -30,5 +25,5 @@ script:
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
  - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/chromedriver"
- - ./chromedriver.1&
+ - ./chromedriver&
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
