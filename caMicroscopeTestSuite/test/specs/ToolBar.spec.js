@@ -3,7 +3,6 @@ var ToolBar = require("../pageobjects/ToolBar.js");
 var assert = require('chai').assert;
 var webdriverio = require('webdriverio');
 var options = { desiredCapabilities : { browserName: 'chrome' } };
-options.binary_location = '/usr/bin/chromium-browser';
 var client = webdriverio.remote(options);
 
 describe('ToolBar', function() {
