@@ -12,6 +12,7 @@ addons:
 before_install:
  - npm install --save selenium-webdriver@2.44.0 
  - npm install selenium-webdriver
+ - npm install chromedriver
  - npm install mocha
  - npm install chai
  - npm install webdriverio
