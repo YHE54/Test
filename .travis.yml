@@ -3,12 +3,6 @@ jdk:
   - oraclejdk8
 services:
   - docker
-addons:
-  apt: {
-      "packages": [
-        "google-chrome-stable"
-      ]
-    },
 before_install:
  - wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip
  - mkdir chromedriver
