@@ -4,7 +4,7 @@ jdk:
 services:
   - docker
 addons:
-  "apt": {
+  apt: {
       "packages": [
         "google-chrome-stable"
       ]
