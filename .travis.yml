@@ -6,7 +6,7 @@ services:
 before_install:
  - npm install --save selenium-webdriver@2.44.0 
  - npm install selenium-webdriver
- - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/chromedriver_3"
+ - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/chromedriver 3"
  - npm install chromedriver
  - npm install mocha
  - npm install chai
