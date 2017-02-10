@@ -2,7 +2,7 @@
 var ToolBar = require("../pageobjects/ToolBar.js");
 var assert = require('chai').assert;
 var webdriverio = require('webdriverio');
-var options = {"http://localhost:9515", desiredCapabilities : { browserName: 'chrome' } };
+var options = {desiredCapabilities : { browserName: 'chrome' } };
 //webDriver driver = new RemoteWebDriver("http://localhost:9515", DesiredCapabilities.chrome());
 var client = webdriverio.remote(options);
 var Utils = require("../pageobjects/Utils.js"); //Pulls new Utils function set
